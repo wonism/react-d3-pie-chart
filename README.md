@@ -87,3 +87,6 @@ __1.0.0__
 __1.0.1__
 - Migrate webpack v4
 - Fix `renderLabel` method
+
+__1.0.2__
+- Fix bug (to not pass the callback in `setState`)

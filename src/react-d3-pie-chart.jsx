@@ -49,6 +49,7 @@ export default class ReactD3PieChart extends PureComponent {
       this.initColors();
     } else {
       this.clearChart();
+      this.createChart();
     }
   }
 
@@ -64,9 +65,7 @@ export default class ReactD3PieChart extends PureComponent {
       return randomHex;
     });
 
-    this.setState({
-      colors,
-    }, this.createChart);
+    this.setState({ colors });
   }
 
   clearChart = () => {
