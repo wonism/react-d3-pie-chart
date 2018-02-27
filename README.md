@@ -83,3 +83,7 @@ render(<DemoApp />, appRoot);
 ## Change Log
 __1.0.0__
 - Initial release
+
+__1.0.1__
+- Migrate webpack v4
+- Fix `renderLabel` method

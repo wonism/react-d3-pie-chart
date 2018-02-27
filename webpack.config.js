@@ -9,7 +9,6 @@ const plugins = isProduction ? [
       "NODE_ENV": JSON.stringify('production')
     }
   }),
-  new webpack.optimize.UglifyJsPlugin(),
   new webpack.optimize.OccurrenceOrderPlugin(),
 ] : [
   new webpack.DefinePlugin({
@@ -34,6 +33,7 @@ const externals = isProduction ? {
 } : {};
 
 module.exports = {
+  mode: isProduction ? 'production' : 'development',
   entry: path.resolve(__dirname, `${dir}/index.js`),
   devServer: {
     contentBase: path.resolve(__dirname, dir),

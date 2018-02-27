@@ -30,7 +30,7 @@ export default class ReactD3PieChart extends PureComponent {
     width: 500,
     height: 500,
     transition: 400,
-    renderLabel: (d => (fp.isObject(d) ? (fp.get('data.label')(d) || d.value) : d)),
+    renderLabel: (d => fp.get('data.label')(d) || d.value),
   };
 
   constructor(props) {
