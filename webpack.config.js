@@ -20,7 +20,7 @@ const plugins = isProduction ? [
 const output = isProduction ? {
   path: path.join(__dirname, 'dist'),
   filename: 'react-d3-pie-chart.js',
-  libraryTarget: 'umd',
+  libraryTarget: 'commonjs',
   library: 'ReactD3PieChart',
 } : {
   path: path.resolve(__dirname, dir),

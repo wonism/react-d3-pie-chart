@@ -90,3 +90,6 @@ __1.0.1__
 
 __1.0.2__
 - Fix bug (to not pass the callback in `setState`)
+
+__1.0.3__
+- change library target into `commonjs`
